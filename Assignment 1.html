@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .caption {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <title>Website</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p>Get to know me and explore the content!</p>
+    </header>
+
+    <section>
+        <h2>Myself</h2>
+        <p>This is the introduction section about myself and my website. Feel free to explore and learn more!</p>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="linkedin">LinkedIn:</label>
+            <input type="text" id="linkedin" name="linkedin">
+
+            <label for="github">GitHub:</label>
+            <input type="text" id="github" name="github">
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+
+    <section>
+        <h2>Image Gallery</h2>
+        
+        <!-- First Row of Images -->
+        <div class="image-row">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 1">
+                <p class="caption">Caption 1</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 2">
+                <p class="caption">Caption 2</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 3">
+                <p class="caption">Caption 3</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 4">
+                <p class="caption">Caption 4</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 5">
+                <p class="caption">Caption 5</p>
+            </div>
+        </div>
+
+        <!-- Second Row of Images -->
+        <div class="image-row">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 6">
+                <p class="caption">Caption 6</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 7">
+                <p class="caption">Caption 7</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 8">
+                <p class="caption">Caption 8</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 9">
+                <p class="caption">Caption 9</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 10">
+                <p class="caption">Caption 10</p>
+            </div>
+        </div>
+
+        <!-- Third Row of Images -->
+        <div class="image-row">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 11">
+                <p class="caption">Caption 11</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 12">
+                <p class="caption">Caption 12</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 13">
+                <p class="caption">Caption 13</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 14">
+                <p class="caption">Caption 14</p>
+            </div>
+            <div class="image-container">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 15">
+                <p class="caption">Caption 15</p>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+<section>
+    <h2>Course Timetable (Previous Semester)</h2>
+    <div class="vertical-timetable">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>10:15 AM - 11:15 AM</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:30 PM</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1:30 PM - 2:30 PM</td>
+                <td>Computer Programming</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2:45 PM - 3:45 PM</td>
+                <td>Engineering Drawing</td>
+            </tr>
+        </table>
+
+        <!-- Tuesday -->
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>10:15 AM - 11:15 AM</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:30 PM</td>
+                <td>Computer Programming</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1:30 PM - 2:30 PM</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2:45 PM - 3:45 PM</td>
+                <td>Engineering Drawing</td>
+            </tr>
+        </table>
+
+        <!-- Wednesday -->
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>10:15 AM - 11:15 AM</td>
+                <td>Engineering Drawing</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:30 PM</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1:30 PM - 2:30 PM</td>
+                <td>Computer Programming</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2:45 PM - 3:45 PM</td>
+                <td>Mathematics</td>
+            </tr>
+        </table>
+
+        <!-- Thursday -->
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>10:15 AM - 11:15 AM</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:30 PM</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1:30 PM - 2:30 PM</td>
+                <td>Computer Programming</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2:45 PM - 3:45 PM</td>
+                <td>Engineering Drawing</td>
+            </tr>
+        </table>
+
+        <!-- Friday -->
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Computer Programming</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>10:15 AM - 11:15 AM</td>
+                <td>Chemistry</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>11:30 AM - 12:30 PM</td>
+                <td>Mathematics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1:30 PM - 2:30 PM</td>
+                <td>Physics</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2:45 PM - 3:45 PM</td>
+                <td>Engineering Drawing</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+</body>
+</html>
